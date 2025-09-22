@@ -1,0 +1,23 @@
+#include <QGuiApplication>
+#include <QObject>
+#include <QQmlApplicationEngine>
+#include <QString>
+
+int main(int argc, char* argv[]) {
+    QGuiApplication app(argc, argv);
+
+    QString str = "abc";
+    qDebug() << "String: " << str;
+    QQmlApplicationEngine engine;
+    const QUrl url(QStringLiteral("qrc:/testqt/main.qml"));
+    QObject::connect(
+        &engine, &QQmlApplicationEngine::objectCreated, &app,
+        [url](QObject* obj, const QUrl& objUrl) {
+            if (!obj && url == objUrl)
+                QCoreApplication::exit(-1);
+        },
+        Qt::QueuedConnection);
+    engine.load(url);
+
+    return app.exec();
+}

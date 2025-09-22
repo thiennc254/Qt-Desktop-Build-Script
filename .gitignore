@@ -1,0 +1,46 @@
+# ==== Build artifacts (CMake) ====
+/build/
+/build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+Makefile
+*.ninja
+.ninja_deps
+.ninja_log
+
+# ==== Qt Creator specific ====
+CMakeLists.txt.user
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.creator.user
+*.autosave
+
+# ==== JetBrains CLion (IDEA) ====
+.idea/
+cmake-build-*/
+
+# ==== VSCode ====
+.vscode/
+.history/
+*.code-workspace
+
+# ==== Logs ====
+/logs/
+*.log
+
+# ==== Runtime / cache ====
+.cache/
+.qmlls.ini
+
+# ==== OS junk ====
+.DS_Store
+Thumbs.db
+
+# ==== Editor swap/backup ====
+*~
+*.swp
+*.swo
