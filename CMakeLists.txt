@@ -4,6 +4,8 @@ project(testqt VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# This line is use to generate the qmlls.ini file for QML language server support
 set(QT_QML_GENERATE_QMLLS_INI on)
 
 find_package(Qt6 6.2 COMPONENTS Quick REQUIRED)
