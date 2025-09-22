@@ -1,7 +1,8 @@
 # Qt CMake Template
 
-A simple Qt project template with a custom build script `desktop.sh` as an
-alternative to Qt Creator.
+As a Vim User, I prefer using terminal and command line tools over IDEs like Qt Creator.
+
+This is a clean and minimal Qt CMake template with a build script `desktop.sh` to compile and run Qt applications from the terminal.
 
 ## 🔧 Requirements
 
