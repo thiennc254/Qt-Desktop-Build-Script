@@ -6,8 +6,6 @@
 int main(int argc, char* argv[]) {
     QGuiApplication app(argc, argv);
 
-    QString str = "abc";
-    qDebug() << "String: " << str;
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/testqt/main.qml"));
     QObject::connect(
